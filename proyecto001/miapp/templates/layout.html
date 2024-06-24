@@ -1,0 +1,45 @@
+body>
+    <header>
+        <header>
+            <div id="logotipo">
+                <img src="{% static 'images/LogoDJango.png' %}" />
+                <h1>Proyecto Web (LP3)</h1>
+            </div>
+        </header>
+    
+    </header>
+
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio"> Inicio</a>
+            </li>
+            <li>
+                <a href="/saludo"> Mensaje de Saludo</a>
+            </li>
+            <li>
+                <a href="/rango"> Mostrar Números [a,b]</a>
+            </li>
+            <li>
+                <a href="/rango2/10/15"> Mostrar Números [10,15]</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno-barra"></span>
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+        <h2 class="title">Titulo de contenido (de prueba)</h2>
+        {% block content %}
+        <strong> Contenido en layout (Padre) </strong>
+        {% endblock %}
+    </div>
+    <footer>
+        UNTELS - Lenguaje de Programación III &copy; Flor Cerdán
+    </footer>
+</body>
+...
